@@ -1,0 +1,10 @@
+- name: Files | Installing static /etc files
+  ansible.builtin.copy:
+    src: "{{ item.src }}"
+    dest: "/{{ item.path }}"
+    owner: "root"
+    group: "root"
+    mode: "{{ item.mode }}"
+  with_filetree:
+    - "{{ role_path }}/files/"
+  when: item.state == 'file'

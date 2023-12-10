@@ -1,0 +1,7 @@
+---
+- name: Printservers
+  hosts: printservers
+  gather_facts: true
+  become: true
+  roles:
+    - printserver

@@ -1,0 +1,7 @@
+---
+all:
+  children:
+    printservers:
+      hosts:
+        printserver:
+          hostname: printserver

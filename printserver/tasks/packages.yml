@@ -1,0 +1,6 @@
+---
+- name: Packages | Installing packages
+  ansible.builtin.package:
+    state: present
+    name: "{{ item }}"
+  with_items: "{{ packages }}"

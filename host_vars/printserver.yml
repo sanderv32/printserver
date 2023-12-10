@@ -1,0 +1,7 @@
+---
+packages:
+  - neofetch
+  - cups
+  - cups-daemon
+  - podman
+  - avahi-daemon
