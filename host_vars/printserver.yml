@@ -5,3 +5,4 @@ packages:
   - cups-daemon
   - podman
   - avahi-daemon
+  - usbip
